@@ -1,0 +1,10 @@
+__pycache__/
+imdb_dataset.csv
+pyvenv.cfg
+model.pt
+lightning_logs/
+Lib/
+Scripts/
+share/
+Include/
+__pycache__/
