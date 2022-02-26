@@ -4,13 +4,13 @@ LSTM Sentiment Tagger in pytorch lightning trained on IMDB dataset from https://
 # Using model
 To train model use main.py. Training takes about 15 minutes on PC with GTX 1050 Ti and achieves about 87% accuracy on validation dataset.
 
-To use trained model on some review you need to first train the model and then put the review into review variable in file example.py.
-The output is probability that the review has positive sentiment.
-Examples:
-'I love that film! It is very exciting.' -> 0.9552
-'I hate that film! It is really boring.' -> 0.0001
+To use trained model on some review you need to first train the model and then put the review into review variable in file example.py.<br />
+The output is probability that the review has positive sentiment.<br />
+Examples:<br />
+'I love that film! It is very exciting.' -> 0.9552<br />
+'I hate that film! It is really boring.' -> 0.0001<br />
 'This is just an over hyped, overrated movie that put me to sleep. During the hype before watching this I expected to see something great. I did not. The movie was so boring and so long. It was a long boring movie.' -> 0.0003
 
 # Model architecture
-Model consists of 2-layer LSTM followed by 2 fully connected layers with batch norm layers in between. This model had the highest accuracy on test dataset when I was doing tests.
+Model consists of 2-layer LSTM followed by 2 fully connected layers with batch norm layers in between. This model had the highest accuracy on test dataset when I was doing tests.<br />
 It is using 50 dimensional embedding from Glove with disabled training to prevent overfitting.
